@@ -3,147 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leo Ads Agency</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+<title>Leo Ads Agency | Professional Advertising Experts</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#fff;color:#111}
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background:#ffffff;
-    color:#111;
+header{
+background:#000;
+color:#ffcc00;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-header {
-    background:#000;
-    color:#ffcc00;
-    padding:20px 10%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:900;
+font-size:22px;
 }
 
-header h2 { font-weight:800; }
-
-nav a {
-    color:#ffcc00;
-    margin-left:25px;
-    text-decoration:none;
-    font-weight:600;
+.logo-box{
+background:#ffcc00;
+color:#000;
+padding:8px 12px;
+border-radius:6px;
+font-weight:900;
 }
 
-.hero {
-    height:90vh;
-    background:linear-gradient(to right,#fff8cc,#ffffff);
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
+nav a{
+color:#ffcc00;
+margin-left:25px;
+text-decoration:none;
+font-weight:500;
 }
 
-.hero h1 {
-    font-size:50px;
-    max-width:800px;
-    animation: fadeIn 1.5s ease-in-out;
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(to right,#fff8cc,#ffffff);
+padding:20px;
 }
 
-.hero p {
-    margin:20px 0;
-    font-size:18px;
-    max-width:600px;
+.hero h1{
+font-size:48px;
+max-width:800px;
 }
 
-.btn {
-    padding:14px 30px;
-    background:#ffcc00;
-    color:#000;
-    text-decoration:none;
-    font-weight:600;
-    border-radius:30px;
-    transition:0.3s;
+.hero p{
+margin:20px 0;
+font-size:18px;
+max-width:600px;
 }
 
-.btn:hover {
-    background:#000;
-    color:#ffcc00;
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#ffcc00;
+color:#000;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+transition:0.3s;
 }
 
-section {
-    padding:80px 10%;
-    text-align:center;
+.btn:hover{
+background:#000;
+color:#ffcc00;
 }
 
-.services {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:40px;
-    margin-top:40px;
+section{
+padding:80px 8%;
+text-align:center;
 }
 
-.card {
-    background:#f5f5f5;
-    padding:40px;
-    border-radius:15px;
-    transition:0.4s;
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
 }
 
-.card:hover {
-    transform:translateY(-10px);
-    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+.card{
+background:#f4f4f4;
+padding:40px;
+border-radius:15px;
+transition:0.3s;
 }
 
-.portfolio {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    margin-top:40px;
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
-.portfolio div {
-    background:#eee;
-    height:200px;
-    border-radius:10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:600;
+.contact-box{
+margin-top:30px;
+font-size:18px;
 }
 
-.testimonials {
-    background:#fff8cc;
+footer{
+background:#000;
+color:#ffcc00;
+padding:30px;
+text-align:center;
 }
 
-.testimonial-box {
-    max-width:700px;
-    margin:40px auto 0;
-    font-style:italic;
-}
-
-footer {
-    background:#000;
-    color:#ffcc00;
-    padding:30px;
-    text-align:center;
-}
-
-.whatsapp {
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    padding:15px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-@keyframes fadeIn {
-    from { opacity:0; transform:translateY(20px); }
-    to { opacity:1; transform:translateY(0); }
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
 }
 </style>
 </head>
@@ -151,66 +133,55 @@ footer {
 <body>
 
 <header>
-    <h2>Leo Ads Agency</h2>
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<div class="logo">
+<div class="logo-box">LA</div>
+Leo Ads Agency
+</div>
+<nav>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <section class="hero">
-    <h1>We Run Powerful Ads That Grow Your Business Fast</h1>
-    <p>Experts in online advertising and brand promotion. We help businesses reach the right audience and increase sales.</p>
-    <a href="#contact" class="btn">Start Your Campaign</a>
+<h1>Professional Ads That Drive Real Business Growth</h1>
+<p>We create powerful advertising campaigns that increase sales, generate leads, and scale your brand.</p>
+<a href="#contact" class="btn">Start Now</a>
 </section>
 
 <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="card">
-            <h3>Social Media Advertising</h3>
-            <p>High converting campaigns across Facebook, Instagram & TikTok.</p>
-        </div>
-        <div class="card">
-            <h3>Google Ads</h3>
-            <p>Search & display ads targeting customers ready to buy.</p>
-        </div>
-        <div class="card">
-            <h3>Brand Promotion</h3>
-            <p>Increase brand awareness and build strong online presence.</p>
-        </div>
-    </div>
-</section>
-
-<section id="portfolio">
-    <h2>Recent Campaigns</h2>
-    <div class="portfolio">
-        <div>Campaign 1 – 5X ROI</div>
-        <div>Campaign 2 – 10K Leads</div>
-        <div>Campaign 3 – Brand Growth</div>
-    </div>
-</section>
-
-<section class="testimonials">
-    <h2>What Clients Say</h2>
-    <div class="testimonial-box">
-        “Leo Ads Agency increased our sales by 300% in just 2 months!”
-    </div>
+<h2>Our Advertising Services</h2>
+<div class="services">
+<div class="card">
+<h3>Social Media Ads</h3>
+<p>High-performing campaigns on Facebook, Instagram & TikTok.</p>
+</div>
+<div class="card">
+<h3>Google Ads</h3>
+<p>Search, Display & YouTube ads targeting ready-to-buy customers.</p>
+</div>
+<div class="card">
+<h3>Brand Promotion</h3>
+<p>Strategic promotion to increase awareness and authority.</p>
+</div>
+</div>
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: hao2963331@gmail.com</p>
-    <br>
-    <a href="mailto:hao2963331@gmail.com" class="btn">Send Email</a>
+<h2>Contact Leo Ads Agency</h2>
+<div class="contact-box">
+<p>Email: hao2963331@gmail.com</p>
+<p>Phone / WhatsApp: 0192963331</p>
+</div>
+<br>
+<a href="https://wa.me/60192963331" class="btn">Chat on WhatsApp</a>
 </section>
 
 <footer>
-    © 2026 Leo Ads Agency | All Rights Reserved
+© 2026 Leo Ads Agency | All Rights Reserved
 </footer>
 
-<a class="whatsapp" href="https://wa.me/your-number">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/60192963331">WhatsApp</a>
 
 </body>
 </html>
