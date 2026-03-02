@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKKW8L5V5D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-RKKW8L5V5D');
-</script>
+<!-- SEO -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leo Ads Agency | Professional Advertising Experts</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+<meta name="description" content="Leo Ads Agency - Professional advertising services & high converting marketing campaigns.">
+<title>Leo Ads Agency | Growth Marketing Experts</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKKW8L5V5D"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-RKKW8L5V5D');
+</script>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#fff;color:#111}
+body{font-family:'Poppins',sans-serif;background:#fff;color:#111;scroll-behavior:smooth}
+section{padding:100px 8%}
+h1,h2,h3{font-weight:800}
 
 header{
+position:fixed;
+width:100%;
+top:0;
 background:#000;
 color:#ffcc00;
-padding:15px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:15px 8%;
+z-index:1000;
 }
 
 .logo{
 display:flex;
 align-items:center;
 gap:10px;
-font-weight:900;
 font-size:22px;
+font-weight:900;
 }
 
 .logo-box{
@@ -41,7 +52,6 @@ background:#ffcc00;
 color:#000;
 padding:8px 12px;
 border-radius:6px;
-font-weight:900;
 }
 
 nav a{
@@ -51,46 +61,35 @@ text-decoration:none;
 font-weight:500;
 }
 
-.hero{ 
-<section style="text-align:center; padding:60px 20px; background:#fff;">
-    <h2>Personal Loan Services</h2>
-    <img src="loan-ad.jpg" alt="Excel Choice Resources Loan Ad" 
-         style="max-width:100%; height:auto; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.1);">
-    <br><br>
-    <a href="https://wa.me/60192963331" 
-       style="display:inline-block; padding:14px 30px; background:#e60000; color:#fff; 
-       text-decoration:none; border-radius:30px; font-weight:bold;">
-       Contact Us Now
-    </a>
-</section>
-height:90vh;
+.hero{
+height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(to right,#fff8cc,#ffffff);
+background:linear-gradient(135deg,#fff8cc,#ffffff);
 padding:20px;
+margin-top:70px;
 }
 
 .hero h1{
-font-size:48px;
-max-width:800px;
+font-size:56px;
+max-width:900px;
 }
 
 .hero p{
-margin:20px 0;
-font-size:18px;
-max-width:600px;
+margin:25px 0;
+font-size:20px;
+max-width:650px;
 }
 
 .btn{
-display:inline-block;
-padding:14px 30px;
+padding:16px 35px;
 background:#ffcc00;
 color:#000;
 text-decoration:none;
-border-radius:30px;
+border-radius:50px;
 font-weight:600;
 transition:0.3s;
 }
@@ -100,52 +99,59 @@ background:#000;
 color:#ffcc00;
 }
 
-section{
-padding:80px 8%;
-text-align:center;
-}
-
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-margin-top:40px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
+margin-top:50px;
 }
 
 .card{
-background:#f4f4f4;
-padding:40px;
-border-radius:15px;
-transition:0.3s;
+background:#f9f9f9;
+padding:50px;
+border-radius:20px;
+transition:0.4s;
 }
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.loan-section{
+background:#fef3c7;
+text-align:center;
+}
+
+.loan-section img{
+max-width:100%;
+border-radius:20px;
+box-shadow:0 20px 50px rgba(0,0,0,0.15);
 }
 
 .contact-box{
-margin-top:30px;
 font-size:18px;
+margin-top:20px;
 }
 
 footer{
 background:#000;
 color:#ffcc00;
-padding:30px;
+padding:50px 8%;
 text-align:center;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:25px;
+right:25px;
 background:#25D366;
 color:white;
-padding:15px 20px;
+padding:15px 22px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 </style>
 </head>
@@ -159,32 +165,47 @@ Leo Ads Agency
 </div>
 <nav>
 <a href="#services">Services</a>
+<a href="#loan">Loan Campaign</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Professional Ads That Drive Real Business Growth</h1>
-<p>We create powerful advertising campaigns that increase sales, generate leads, and scale your brand.</p>
-<a href="#contact" class="btn">Start Now</a>
+<h1>We Build & Scale Profitable Advertising Campaigns</h1>
+<p>Helping businesses generate leads, increase sales, and dominate their market with high-performance ads.</p>
+<a href="#contact" class="btn">Book Free Consultation</a>
 </section>
 
 <section id="services">
-<h2>Our Advertising Services</h2>
+<h2>Our Core Services</h2>
 <div class="services">
 <div class="card">
-<h3>Social Media Ads</h3>
-<p>High-performing campaigns on Facebook, Instagram & TikTok.</p>
+<h3>Meta Advertising</h3>
+<p>High-converting campaigns across Facebook & Instagram.</p>
 </div>
 <div class="card">
 <h3>Google Ads</h3>
-<p>Search, Display & YouTube ads targeting ready-to-buy customers.</p>
+<p>Search, Display & YouTube campaigns targeting ready buyers.</p>
 </div>
 <div class="card">
-<h3>Brand Promotion</h3>
-<p>Strategic promotion to increase awareness and authority.</p>
+<h3>Lead Generation Funnels</h3>
+<p>Landing pages & conversion tracking to maximize ROI.</p>
 </div>
 </div>
+</section>
+
+<section id="loan" class="loan-section">
+<h2>Personal Loan Campaign</h2>
+<p>Advertising campaign managed for Excel Choice Resources.</p>
+<br>
+<a href="https://wa.me/60192963331" onclick="gtag('event','loan_ad_click');">
+<img src="loan-ad.jpg" alt="Personal Loan Ad">
+</a>
+<br><br>
+<a href="https://wa.me/60192963331" class="btn">Apply via WhatsApp</a>
+<p style="margin-top:20px;font-size:14px;">
+All loans subject to approval. Terms & conditions apply.
+</p>
 </section>
 
 <section id="contact">
@@ -198,7 +219,8 @@ Leo Ads Agency
 </section>
 
 <footer>
-© 2026 Leo Ads Agency | All Rights Reserved
+<p>© 2026 Leo Ads Agency. All Rights Reserved.</p>
+<p>Professional Growth Marketing Experts</p>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/60192963331">WhatsApp</a>
