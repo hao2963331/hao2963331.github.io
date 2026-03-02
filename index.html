@@ -1,40 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Leo Ads Agency</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {font-family: Arial; margin: 0; background:#f4f4f4;}
-        header {background:#111; color:white; padding:20px; text-align:center;}
-        section {padding:40px; text-align:center;}
-        .btn {background:#ff6600; color:white; padding:10px 20px; text-decoration:none;}
-        footer {background:#111; color:white; padding:20px; text-align:center;}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leo Ads Agency</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #111;
+}
+
+header {
+    background-color: #000;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffcc00;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff8cc;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 30px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #000;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
 </head>
 <body>
 
 <header>
     <h1>Leo Ads Agency</h1>
-    <p>Web Development & Digital Advertising</p>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section>
-    <h2>We Build Websites That Convert</h2>
-    <p>Professional web design, SEO, and paid advertising campaigns.</p>
-    <a href="mailto:hao2963331@gmail.com" class="btn">Contact Us</a>
+<section class="hero">
+    <h1>We Promote. We Advertise. We Grow Your Business.</h1>
+    <p>Professional advertising services to boost your brand visibility and sales.</p>
+    <a href="mailto:hao2963331@gmail.com" class="btn">Get Started</a>
 </section>
 
-<section>
+<section id="services" class="section">
     <h2>Our Services</h2>
-    <p>✔ Website Design<br>
-       ✔ Facebook & Google Ads<br>
-       ✔ SEO Optimization<br>
-       ✔ Branding</p>
+    <div class="services-box">
+        <div class="card">
+            <h3>Social Media Ads</h3>
+            <p>High-converting campaigns on Facebook, Instagram, and TikTok.</p>
+        </div>
+        <div class="card">
+            <h3>Google Advertising</h3>
+            <p>Search and display ads that target ready-to-buy customers.</p>
+        </div>
+        <div class="card">
+            <h3>Brand Promotion</h3>
+            <p>Increase brand awareness and reach new audiences effectively.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email us directly to start your campaign today.</p>
+    <a href="mailto:hao2963331@gmail.com" class="btn">Email Leo Ads Agency</a>
 </section>
 
 <footer>
-    <p>© 2026 Leo Ads Agency</p>
+    <p>© 2026 Leo Ads Agency | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
 </footer>
 
 </body>
